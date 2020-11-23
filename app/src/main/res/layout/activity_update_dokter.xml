@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="10dp"
+tools:context=".activity.dokter.UpdateDokter">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="50dp"
+        android:text="Update Data Dokter"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nomor" />
+    <EditText
+        android:id="@+id/et_noDokter_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nomor Dokter"
+        android:inputType="none"
+        android:longClickable="false"
+        android:maxLength="10">
+    </EditText>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama" />
+    <EditText
+        android:id="@+id/et_namaDokter_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Nama Lengkap"
+        android:maxLength="20" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Jenis Kelamin" />
+    <EditText
+        android:id="@+id/et_jk_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="L atau P"
+        android:inputType="text"
+        android:maxLength="1" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Tanggal Lahir" />
+    <EditText
+        android:id="@+id/et_tgl_lahir_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="yyyy-mm-dd"
+        android:inputType="date" />
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Email" />
+    <EditText
+        android:id="@+id/et_email_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="xxx@mail.com"
+        android:inputType="textEmailAddress" />
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Email" />
+    <EditText
+        android:id="@+id/et_telp_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="0000000"
+        android:inputType="number" />
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alamat" />
+    <EditText
+        android:id="@+id/et_alamat_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Alamat"
+        android:maxLength="100" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spesialis" />
+    <EditText
+        android:id="@+id/et_spesialis_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Spesialis"
+        android:maxLength="100" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spesialis" />
+    <EditText
+        android:id="@+id/et_tarif_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Tarif"
+        android:maxLength="100" />
+
+    <Button
+        android:id="@+id/button_save_dokter_update"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@android:drawable/ic_menu_save"
+        android:text="Simpan" />
+    <Button
+        android:id="@+id/button_kembali_dokter_update"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@android:drawable/ic_media_previous"
+        android:text="Kembali" />
+
+</LinearLayout>
+</ScrollView>
