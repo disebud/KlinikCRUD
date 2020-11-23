@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.disebud.sqliteklinik.DataHelper;
 import com.disebud.sqliteklinik.R;
@@ -33,6 +34,8 @@ public class LihatPasien extends AppCompatActivity {
         ned7 = (EditText) findViewById(R.id.et_alamat_pasien_lihat);
 
         btnKembali = (Button) findViewById(R.id.button_kembali_pasien_lihat);
+
+
         SQLiteDatabase db = dbHelper.getReadableDatabase();
         cursor = db.rawQuery("SELECT * FROM pasien WHERE namapasien = '" +
                 getIntent().getStringExtra("nama") + "'" , null);
