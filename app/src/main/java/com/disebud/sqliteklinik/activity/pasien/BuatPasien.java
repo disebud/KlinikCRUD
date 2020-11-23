@@ -19,7 +19,7 @@ public class BuatPasien extends AppCompatActivity {
     protected Cursor cursor;
     DataHelper dbHelper;
     Button btn1, btn2;
-    EditText text1, text2, text3, text4, text5, text6, text7, text8, text9;
+    EditText text1, text2, text3, text4, text5, text6, text7;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,14 +38,14 @@ public class BuatPasien extends AppCompatActivity {
             @Override
             public void onClick(View arg0) {
                 SQLiteDatabase db = dbHelper.getWritableDatabase();
-                db.execSQL("insert into pasien(nopasien, namapasien, jk, tgl_lahir, agama,telp,alamat) values('" +
+                db.execSQL("insert into pasien (nopasien, namapasien, jk, tgl_lahir, agama,telp,alamat) values('" +
                         Integer.parseInt(text1.getText().toString()) + "','" +
                         text2.getText().toString() + "','" +
                         text3.getText().toString() + "','" +
                         text4.getText().toString() + "','" +
                         text5.getText().toString() + "','" +
                         text6.getText().toString() + "','" +
-                        text7.getText().toString() + "','" + "')");
+                        text7.getText().toString() + "')");
                 Toast.makeText(getApplicationContext(), "Berhasil" ,
                         Toast.LENGTH_LONG).show();
                 Pasien.pas.RefreshList();
@@ -55,6 +55,7 @@ public class BuatPasien extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
+
                 finish();
             }
         } );
