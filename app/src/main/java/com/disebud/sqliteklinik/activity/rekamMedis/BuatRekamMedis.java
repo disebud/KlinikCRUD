@@ -26,33 +26,34 @@ public class BuatRekamMedis extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_buat_rekam_medis);
         dbHelper = new DataHelper(this);
-        text1 = (EditText) findViewById(R.id.et_noPasien); // noDokter
-        text2 = (EditText) findViewById(R.id.et_namaPasien); // namaDokter
-        text3 = (EditText) findViewById(R.id.et_jk_pasien); // jk
-        text4 = (EditText) findViewById(R.id.et_tgl_lahir_pasien); // tglLahir
-        text5 = (EditText) findViewById(R.id.et_agama_pasien); // agama
-        text6 = (EditText) findViewById(R.id.et_telp_pasien); // telp
-        text7 = (EditText) findViewById(R.id.et_alamat_pasien); // alamat
-        btn1 = (Button) findViewById(R.id.button_save_pasien);
-        btn2 = (Button) findViewById(R.id.button_kembali_pasien);
+        text1 = (EditText) findViewById(R.id.et_noRekam); // noRekam
+        text2 = (EditText) findViewById(R.id.et_tgl_rekam); // tgl rekam
+        text3 = (EditText) findViewById(R.id.et_noPasien_rekam); // no pasien Rekam
+        text4 = (EditText) findViewById(R.id.et_noDokter_rekam); // no Dokter Rekam
+        text5 = (EditText) findViewById(R.id.et_keluhan_rekam); // Keluhan
+        text6 = (EditText) findViewById(R.id.et_diagnosa_rekam); // Diagnosa
+        text7 = (EditText) findViewById(R.id.et_biaya_rekam); // biaya
+        btn1 = (Button) findViewById(R.id.button_save_rekam);
+        btn2 = (Button) findViewById(R.id.button_kembali_rekam);
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
                 SQLiteDatabase db = dbHelper.getWritableDatabase();
-                db.execSQL("insert into pasien (nopasien, namapasien, jk, tgl_lahir, agama,telp,alamat) values('" +
+                db.execSQL("insert into rekammedis (norekam, tgl_rekam, nopasien, nodokter, keluhan,diagnosa,biaya) VALUES('" +
                         Integer.parseInt(text1.getText().toString()) + "','" +
                         text2.getText().toString() + "','" +
-                        text3.getText().toString() + "','" +
-                        text4.getText().toString() + "','" +
+                        Integer.parseInt(text3.getText().toString()) + "','" +
+                        Integer.parseInt(text4.getText().toString()) + "','" +
                         text5.getText().toString() + "','" +
                         text6.getText().toString() + "','" +
-                        text7.getText().toString() + "')");
+                        Integer.parseInt(text7.getText().toString()) + "')");
                 Toast.makeText(getApplicationContext(), "Berhasil" ,
                         Toast.LENGTH_LONG).show();
                 Pasien.pas.RefreshList();
                 finish();
             }
         } );
+
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {

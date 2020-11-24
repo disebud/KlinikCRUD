@@ -16,6 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="50dp"
+            android:textColor="@color/black"
             android:text="Lihat Data  Rekam Medis"
             android:textAlignment="center"
             android:textSize="24sp" />
@@ -29,8 +30,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="0000"
+            android:textColor="@color/black"
+            android:layout_marginEnd="20dp"
             android:textAlignment="textEnd"
-            android:textSize="25sp">
+            android:textSize="20sp">
         </TextView>
         <TextView
             android:id="@+id/textView3"
@@ -43,8 +46,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="yyyy-mm-dd"
+            android:textColor="@color/black"
+            android:layout_marginEnd="20dp"
             android:textAlignment="textEnd"
-            android:textSize="25sp"
+            android:textSize="20sp"
             />
         <TextView
             android:id="@+id/textView2"
@@ -56,15 +61,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="00000"
+            android:layout_marginEnd="20dp"
             android:textAlignment="textEnd"
-            android:textSize="25sp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
             />
         <TextView
             android:id="@+id/tv_namaPasien_rekam"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/purple_700"
             android:text="siapa"
+            android:textStyle="italic"
             android:textAlignment="textEnd"
             android:textSize="25sp"
             />
@@ -80,13 +90,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="0000"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/black"
             android:textAlignment="textEnd"
-            android:textSize="25sp" />
+            android:textSize="20sp" />
         <TextView
             android:id="@+id/tv_namaDokter_rekam"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="siapa"
+            android:textStyle="italic"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/purple_700"
             android:textAlignment="textEnd"
             android:textSize="25sp" />
         <TextView
@@ -94,6 +109,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="anu"
+            android:textStyle="italic"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/purple_700"
             android:textAlignment="textEnd"
             android:textSize="25sp" />
 
@@ -108,8 +126,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="keluhan sakit"
+            android:layout_marginEnd="20dp"
             android:textAlignment="textEnd"
-            android:textSize="25sp" />
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
         <TextView
             android:id="@+id/textView7"
             android:layout_width="wrap_content"
@@ -121,8 +141,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="textEnd"
-            android:textSize="25sp"
-            android:hint="0000000"
+            android:textSize="20sp"
+            android:text="0000000"
+            android:textColor="@color/black"
+            android:layout_marginEnd="20dp"
             android:inputType="number" />
         <TextView
             android:id="@+id/textView5"
@@ -134,7 +156,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="textEnd"
-            android:textSize="25sp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginEnd="20dp"
             android:text="0000"
             />
         <Button
